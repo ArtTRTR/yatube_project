@@ -1,12 +1,11 @@
-# yatube_project
-#название проекта
+## Yatube_project
 Yatube
-#краткое описание
-Социальная сеть для друзей
-#технологии в проекте
-Python 3.10
-Django 2.2.19
-#инструкции по запуску
-пока хз
-#автор
-Артем Ц
+#### Description
+Social network for friends
+#### Technologies
+- Python 3.10
+- Django 2.2.19
+#### Launch instruction
+Nothing now
+#### Author
+Artem Ts
