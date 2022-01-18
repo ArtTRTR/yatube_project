@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def index(request):
+    return HttpResponse('You <i>can\'t </i> receive correct <b>responce</b>,<br> '
+                        'if you don\'t have correct <s>questions</s>.')
+
+
+def group_posts(request, slug):
+    return HttpResponse('Posts here')
