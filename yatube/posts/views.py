@@ -1,10 +1,20 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse('You <i>can\'t </i> receive correct <b>responce</b>,<br> '
-                        'if you don\'t have correct <s>questions</s>.')
+    template = 'posts/index.html'
+    text = 'Это главная страница проекта Yatube'
+    context = {
+        'text' : text
+    }
+    return render(request, template, context)
 
 
 def group_posts(request, slug):
-    return HttpResponse('Posts here')
+    template = 'posts/group_list.html'
+    text = 'Здесь будет информация о группах проекта Yatube'
+    context = {
+        'text': text
+    }
+    return render(request, template, context)
